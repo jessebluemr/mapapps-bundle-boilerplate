@@ -1,3 +1,3 @@
 define([
-    "dojo/i18n!./nls/bundle"
+    //"dojo/i18n!./nls/bundle"
 ], {});

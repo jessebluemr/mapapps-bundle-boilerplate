@@ -1,39 +1,33 @@
 {
-    "Bundle-SymbolicName": "mapapps-bundle-boilerplate",
-    "Bundle-Version": "0.0.1",
-    "Require-Bundle": [{
-            "name": "map",
-            "version": "^3.4.0"
-        }],
-    "CSS-Themes-Extension": [{
-            "name": "*",
-            "files": ["./css/styles.css"]
-        }],
-    "layout-widgets": [{
-            "widgetRole": "extentWriter",
-            "window": {
-                "title": "${title}",
-                "closable": false,
-                "resizable": false,
-                "show": true,
-                "marginBox": {
-                    "w": 250,
-                    "h": 210
-                }
-            }
-        }
-    ],
-    "Components": [{
-            "name": "Widget",
-            "provides": ["dijit.Widget"],
-            "propertiesConstructor": true,
-            "properties": {
-                "widgetRole": "extentWriter",
-                "decimalPlaces": 3
-            },
-            "references": [{
-                    "name": "mapState",
-                    "providing": "ct.mapping.map.MapState"
-                }]
-        }]
+	"Bundle-SymbolicName": "mapapps-bundle-boilerplate",
+	"Bundle-Version": "0.0.1",
+	"Bundle-Localization": [],
+	"Require-Bundle": [{
+		"name": "map",
+		"version": "^3.3.0"
+	}],
+	"CSS-Themes-Extension": [{
+		"name": "*",
+		"files": ["./css/styles.css"]
+	}],
+	"layout-widgets": [{
+		"widgetRole": "myWidget",
+		"window": {
+			"title": "A Window Title",
+			"closable": false,
+			"show": true,
+			"marginBox": {
+				"w": 250,
+				"h": 210
+			}
+		}
+	}],
+	"Components": [{
+		"name": "Widget",
+		"provides": ["dijit.Widget"],
+		"propertiesConstructor": true,
+		"properties": {
+			"widgetRole": "myWidget"
+		}
+	}]
 }
